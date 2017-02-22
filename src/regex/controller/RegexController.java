@@ -14,4 +14,24 @@ public class RegexController
 	{
 		
 	}
+	
+	public boolean validFirstName(String name)
+	{
+		return false;
+	}
+	
+	public boolean validLastName(String name)
+	{
+		return false;
+	}
+	
+	public boolean validNumber(String number)
+	{
+		return false;
+	}
+	
+	public boolean validEmail(String email)
+	{
+		return false;
+	}
 }
