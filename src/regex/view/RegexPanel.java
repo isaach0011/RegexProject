@@ -90,6 +90,20 @@ public class RegexPanel extends JPanel
 	
 	public void setupListeners()
 	{
-		
+		button.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				String firstName = firstInput.getText();
+				String lastName = lastInput.getText();
+				String number = numberInput.getText();
+				String email = emailInput.getText();
+				
+				firstInput.setBackground(baseController.validFirstName(firstName));
+				lastInput.setBackground(baseController.validLastName(lastName));
+				numberInput.setBackground(baseController.validNumber(number));
+				emailInput.setBackground(baseController.validEmail(email));
+			}
+		});
 	}
 }
